@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 0
+  name: 'Ynov Lyon'
+  address: '27 Rue..'
+  zip_code: '69007'
+  city: 'Lyon'
+  opening_hours: '8h - 19h'
+  phone: '0345678903'
+  email: '@ynov.com'
+  latitude: 12.3
+  longitude: 45.6
+  students_count: 1000
+  status: 'private'
+
+two:
+  id: 1
+  name: 'Ynov Bordeaux'
+  address: '27 Rue..'
+  zip_code: '0309'
+  city: 'Bordeaux'
+  opening_hours: '8h - 19h'
+  phone: '0345678903'
+  email: '@ynov.com'
+  latitude: 34.4
+  longitude: 34.9
+  students_count: 1000
+  status: 'public'

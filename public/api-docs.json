@@ -1,0 +1,23 @@
+{
+  "apiVersion": "1.0",
+  "basePath": "https://schoolz-api.herokuapp.com",
+  "apis": [
+    {
+      "path": "/api/v1/sessions.{format}",
+      "description": "User Management"
+    },
+    {
+      "path": "/api/v1/schools.{format}",
+      "description": "School Management"
+    }
+  ],
+  "authorizations": null,
+  "info": {
+    "title": "Schoolz API",
+    "description": "Manage school for an Android App",
+    "termsOfServiceUrl": "",
+    "contact":  "valentin.bredy@hotmail.fr",
+    "license": "Apache 2.0",
+    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schools#index": [
+    {
+      "verb": "GET",
+      "path": "/api/v1/schools",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "errors": [
+          {
+            "detail": "Access Denied"
+          }
+        ]
+      },
+      "code": 401,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/api/v1/schools",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "errors": [
+          {
+            "detail": "Access Denied"
+          }
+        ]
+      },
+      "code": 401,
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/api/v1/schools",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "success": true
+      },
+      "code": 200,
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "sessions#create": [
+    {
+      "verb": "POST",
+      "path": "/api/v1/users/sign_in",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": "email=user_1%40domain.com&password=password123",
+      "response_data": {
+        "success": true,
+        "auth_token": "d9e045cd0e65e9b5d272806c9cc8006f"
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ]
+}
