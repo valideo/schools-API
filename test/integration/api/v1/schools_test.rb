@@ -96,7 +96,7 @@ feature 'Schools' do
     it 'renvoi 201 quand bien supprimé' do
 
       assert_difference "School.all.count", count: -1 do
-       delete api_v1_school_path, {id: 1}, {'HTTP_AUTHORIZATION' => 'valid_token'}
+       delete api_v1_school_path(0), nil, {'HTTP_AUTHORIZATION' => 'valid_token'}
 
         assert_equal 201, last_response.status
       end
