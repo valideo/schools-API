@@ -1,6 +1,4 @@
-class Api::V1::SessionsController < Api::ApiController
-
-  schools_controller :users, "User Management"
+class Api::V1::SessionsController < Api::ApiControllers
 
   skip_before_action :require_login!, only: :create
 
@@ -8,12 +6,6 @@ class Api::V1::SessionsController < Api::ApiController
 # retourn token si ok
 # erreur si identifiants invalide : 401
 
-  schools_api :create do
-    summary "Sign in"
-    param :body, "status", :string, :required, "Example: { \"email\": \"test@test.com\", \"password\": \"test\""
-    response :success
-    response :unauthorized
-  end
   def create
     user = User.find_by(email: params[:email])
 
